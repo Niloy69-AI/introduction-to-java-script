@@ -9,11 +9,15 @@
     <h2>Sum of 2 Numbers</h2>
     <p id="var"></p>
     <p id="var2"></p>
+    <p id="sub"></p>
+    <p id="mult"></p>
+    <p id="div"></p>
+
     <script>
       document.getElementById("myH").innerHTML = "javascript Comments";
       //This is a Comment
       document.getElementById("myP").innerHTML = "My first paragraph.";
-
+      var a, b, sum, mult, div;
       var a = 5;
       var b = 50;
       var sum = a + b;
@@ -24,10 +28,15 @@
       b = 15;
 
       sum = a + b;
-
+      sub = a - b;
+      mult = a * b;
+      div = a / b;
       document.getElementById("var").innerHTML =
         "sum of " + a + "+" + b + "=" + sum;
       document.getElementById("var2").innerHTML = `Sum of ${a}+${b}=${sum}`;
+      document.getElementById("sub").innerHTML = `Sub of ${a}-${b}=${sub}`;
+      document.getElementById("mult").innerHTML = `mult of ${a}x${b}=${mult}`;
+      document.getElementById("div").innerHTML = `div of ${a}/${b}=${div}`;
     </script>
   </body>
 </html>
